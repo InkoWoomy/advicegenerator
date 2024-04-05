@@ -1,0 +1,27 @@
+/*This script was made by ChatGPT and not by me*/
+
+.dice-icon {
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+  }
+  
+  .dice-icon:hover {
+    animation: shake 0.5s infinite; /* Apply shake animation on hover */
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .spin {
+    animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Apply spin animation on click */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1080deg); } /* Rotate 3 full circles (1080 degrees) */
+  }
+  
